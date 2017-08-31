@@ -13,46 +13,113 @@
       </b>
       <div align="left"><br>
         <b>Moment tensor inversions<br>
-        </b><i>left</i> - Waveform fits between data (in black) and
-        synthetics (in red) for Anchorage event (2009-04-07
-        20:12:55.351). <br>
-        <i>right</i> - Best depth estimate [centroid depth]. The
-        inverted red triangle is the best depth estimated by Alaska
-        Earthquake Center (AEC) using P-arrival times [hypocenter
-        depth].<br>
+        </b>Moment tensor is way of quantifying the relative motion on a
+        planar fault and is represented by a 4-quadrant beachball that
+        roughly mimics the pattern of the radiating wavefield. <br>
+        The best moment tensor is obtained by minimizing the difference
+        between the data with the synthetics.&nbsp; The synthetics are
+        computed for all possible moment tensors using a 1D reference
+        structural model. Different bandpass filters are applied to the
+        body waves and surface waves when comparing the data with the
+        synthetics. <br>
         <div align="center"><img
             src="figures/20090407201255351_main.png" alt="" width="351"
             height="581">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
+
+
+
           <img src="figures/dep_20090407201255351_L1_M111.png" alt=""
             width="371" height="479"><br>
           <br>
+          <div align="left"><i>(left</i><i>)</i>&nbsp; Waveform fits
+            between data (black) and synthetics (red) for an example
+            event in Anchorage (2009-04-07 20:12:55.351). The 'x' marked
+            on the beachball are the theoretical piercing points of the
+            emerging ray path to the stations.<br>
+          </div>
+          <div align="left"><i>(right</i><i>)</i>&nbsp; Best depth
+            estimate [centroid depth]. The inverted red triangle is the
+            best depth estimated by Alaska Earthquake Center (AEC) using
+            P-arrival times [hypocenter depth].<br>
+            <br>
+            <br>
+          </div>
         </div>
-        <b>Uncertainties in moment tensors<br>
-          <br>
-        </b>
+        <b>Uncertainties in moment tensors</b><br>
+        The confidence in moment tensor is quantified by comparing the
+        normalized distribution of posterior samples, P(ω), with the
+        normalized distribution of all samples, V(ω), where ω is a angle
+        between two moment tensors. <br>
+        Construction of the confidence curve P(V) for a moment tensor
+        M0.
         <div align="center"><b><img
               src="figures/20090317011333066_L1_M111_theory.png" alt=""
               width="607" height="190"><br>
             <br>
+          </b>
+          <div align="left"><b> </b><i>(left)</i> The fractional volume
+            and probability curves V(ω) and P(ω). The value P(V) is
+            defined in terms of V(ω) and P(ω) by requiring that P(V) =
+            P(ω) when V(ω) = V , as indicated by the arrows. The number
+            V(ω) is the fractional volume of the neighborhood NM0 (ω) of
+            moment tensors within angular distance ω of M0 , and P(ω) is
+            likewise the probability of NM0 (ω). Hence, P(V) is the
+            probability that the true moment tensor for the earthquake
+            lies in the neighborhood of M0 that has volume V ; large
+            P(V) for small V is desirable. <br>
+            <i>(right)</i> The confidence curve P(V). The orange and
+            brown trajectories correspond to those in Figure 4a. The
+            area under the curve is our confidence parameter PAV . The
+            45∘ line (dashed) would be P(V) if the probability had been
+            homogeneous.<br>
+          </div>
+          <b><br>
+            <br>
           </b></div>
-        <br>
-        <b>Very low frequency earthquakes (VLFE)<br>
-        </b>Waveform fits for a VLFE event. <br>
+        <b>Very low frequency earthquakes (VLFE)</b><br>
+        Compared to a normal earthquake of Mw 4 which has a source
+        duration of ~1 second, duration for VLFEs of a similar magnitude
+        event could go upto 15 seconds as in this case. Due to the lack
+        of the high-frequency content many-a-times these events go
+        undetected. The characteristic of a VLFE is the energy
+        distribution in the long period (low frequency) of the spectrum,
+        which allows one to perform source inversion using long-period
+        surface waves. <br>
+        For estimating the best source duration we search over varying
+        bandpass and source duration. <br>
         <br>
         <div align="center"><img
             src="figures/20150912032512711_tactmod_020_20bp50.png"
             alt="" width="317" height="471">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
+
+
+
           <img src="figures/VR_20150912032512711.png" alt="" width="319"
             height="306"><br>
-        </div>
-        <br>
-        <b>Moment tensor catalog of southern Alaska<br>
           <br>
-        </b>
+          <div align="left"><i>(left)</i> Waveform fits for a VLFE
+            event. <br>
+            <i>(right)</i> Estimated variance reduction (a measure of
+            fit between recorded and synthetic seismograms) for varying
+            bandpass and source reductions. In this case, the best VR is
+            obtained using 18-46 second filter and a 12 second source
+            duration.<br>
+            <br>
+            <br>
+          </div>
+        </div>
+        <b>Moment tensor catalog of Alaska<br>
+        </b>For performing a earthquake based tomographic inversion it
+        is important to have reliable source mechanisms. We prepared a
+        moment tensor catalog of &gt;200 events (2007-2017) that are
+        distributed in Alaska. <br>
+        Undergraduate researchers Qingping Yu and Joshua Purba also
+        contributed to this.<br>
+        <br>
         <div align="center"><b><img
               src="figures/alaska_maps_ifig231_044.png" alt=""
               width="516" height="498"><br>
@@ -62,23 +129,46 @@
             <br>
           </div>
         </div>
-        <b>Hidden faults</b><br>
+        <b>Hidden faults<br>
+        </b>Distribution of moment tensors of similar mechanism in a
+        clustered seismic zone can be used as a strong evidence for the
+        presence of a fault. This is specially useful when faults are
+        sub-surface or overlain by a layer of sediment as in a basin
+        environment and there is no surface feature. <br>
+        Moment tensor along with gravity and magnetic measurements are
+        used to study the tectonic setting of such seismic zones. <br>
+        <br>
         <div align="center"><img
             src="figures/alaska_maps_ifig205_019.png" alt="" width="397"
             height="414">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
+
+
+
           <img src="figures/alaska_maps_ifig222_040_faults_folds_BW.png"
             alt="" width="338" height="419"><br>
+          <br>
         </div>
+        (left) Delineated are the proposed faults in Minto Flats fault
+        zone. Note the similar moment tensor solutions along the fault.<br>
+        (right) Illuminated are the regions of shallow crustal
+        seismicity around Cook Inlet and Susitna basin, Alaska. <br>
+        <br>
         <br>
         <b>3D simulations</b><br>
         3D velocity model of southern Alaska (<a
           href="http://onlinelibrary.wiley.com/doi/10.1029/2005JB004240/abstract">Eberhart-Phillips
 
 
+
+
+
           et. al. 2006</a>) with shallow 1D velocity model of Cook Inlet
         basin (<a href="http://www.dggs.alaska.gov/pubs/id/21961">Shellenbaum
+
+
+
 
 
           et. al. 2010</a>) embedded in it. <br>
@@ -94,6 +184,7 @@
         <br>
         <div align="center"><img src="figures/syn_shallow_vs_crust2.png"
             alt="" width="540" height="525"><br>
+          <br>
         </div>
       </div>
     </div>
